@@ -1,0 +1,41 @@
+.filterTab{
+    display: flex;
+    width: 90px;
+    height: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: var(--primary-black);
+    cursor: pointer;
+    position: relative;
+}
+
+.filter{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+}
+
+.filterTab>img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    
+}
+
+.filterCaption{
+    font-size: 12px;
+    border-bottom: 2px solid transparent;
+}
+
+.filterTab:hover > .filterCaption{
+    border-bottom: 2px solid var(--primary-grey);
+}
+
+.filterTab:hover>.filter{
+    display: none;
+}

@@ -44,7 +44,7 @@
     color: var(--primary-black);
 }
 
-.searchBar{
+.searchBar, .sbContainer{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,6 +54,10 @@
     border: 1px solid var(--primary-grey);
     border-radius: 30px;
 }
+.sbContainer{
+    width: 100%;
+}
+
 
 .anywhere, .anyweek, .addguests{
     width: 29%;
@@ -90,6 +94,69 @@
     font-weight: 600;
 }
 
+
+/*SEARCHBAR MOBILE HERE*************************************************/
+
+.searchBarMobile{
+    display: none;
+    flex-direction: row;
+    width: 100%;
+}
+
+.sbmLeft{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sbmSearchIcon{
+    font-size: 24px;
+}
+
+.sbmCenter{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 65%;
+}
+.whereto{
+    font-weight: 600;
+}
+
+.sbmlinks{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.sbmlinks>span{
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.sbmRight{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary-grey);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.filterIcon{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+/***********************************************************/
 .tbRight{
     justify-content: flex-end;
     gap: 20px;
@@ -99,11 +166,13 @@
     font-size: 13px;
     color: var(--primary-black);
     font-weight: 600;
+    cursor: pointer;
 }
 
 .globe{
     font-size: 20px;
     color: var(--primary-black);
+    cursor: pointer;
 }
 
 .profileContainer{
@@ -120,9 +189,138 @@
 
 .menuIcon{
     font-size: 20px;
+    cursor: pointer;
 }
 
 .profileIcon{
     font-size: 30px;
     color:var(--text-grey);
+    cursor: pointer;
+}
+
+
+.topBarBottom{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding: 30px 0px 0px 20px;
+}
+
+.filterTabsWrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************MEDIA QUERIES****************************************/
+
+
+@media  screen and (max-width:1080px) {
+    .topbarTop{
+        justify-content: flex-start;
+    }
+    .tbLeft{
+        flex: 0.5;
+    }
+
+    .iconText{
+        display: none;
+    }
+
+
+}
+
+@media  screen and (max-width:900px) {
+    .tbLeft{
+        flex: 0.1;
+    }
+
+    .tbCenter{
+        flex: 1.6;
+    }
+    .tbRight{
+        flex: 1.3;
+    }
+     
+}
+
+
+
+@media  screen and (max-width:600px) {
+
+    .topbarTop{
+        padding: 0;
+        border-bottom: none;
+    }
+    .tbLeft{
+        display: none;
+    }
+
+    .tbCenter{
+        width: 100%;
+        height: 70px;
+        border-radius: 70px;
+        padding: 0;
+    }
+
+    .sbContainer{
+        display: none;
+    }
+
+    .searchBarMobile{
+        display: flex;
+    }
+
+
+    .tbRight{
+        display: none;
+    }
+    
+}
+
+
+
+@media  screen and (max-width:400px) {
+    .topbarTop{
+        padding: 0;
+        border-bottom: none;
+    }
+    .tbLeft{
+        display: none;
+    }
+
+    .tbCenter{
+        width: 100%;
+        height: 70px;
+        border-radius: 70px;
+        padding: 0;
+    }
+
+    .sbContainer{
+        display: none;
+    }
+
+    .searchBarMobile{
+        display: flex;
+    }
+
+
+    .tbRight{
+        display: none;
+    }
 }
