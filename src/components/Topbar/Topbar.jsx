@@ -3,6 +3,9 @@ import {FaAirbnb, FaUserCircle} from 'react-icons/fa'
 import {BiSearch, BiGlobe} from 'react-icons/bi'
 import {IoMenuOutline} from 'react-icons/io5'
 import {CiSliderHorizontal} from 'react-icons/ci'
+import {MdOutlineKeyboardArrowRight as ArrowRight} from 'react-icons/md'
+
+import MenuIcon from '@mui/icons-material/Menu';
 
 
 import FilterTab from '../FilterTab/FilterTab'
@@ -19,8 +22,8 @@ const Topbar = () => {
     <div className="topBar">
         <div className="topbarTop">
             <div className="tbLeft">
-                <FaAirbnb className='icon'/>
-                <span className="iconText">airbnb</span>
+                <FaAirbnb className='logo'/>
+                <span className="logoText">airbnb</span>
             </div>
             <div className="tbCenter">
                 <div className="searchBar">
@@ -68,7 +71,7 @@ const Topbar = () => {
                 <span className="becomeHost">Become a Host</span>
                 <BiGlobe className='globe'/>
                 <div className="profileContainer">
-                    <IoMenuOutline className='menuIcon'/>
+                    <MenuIcon className='menuIcon'/>
                     <FaUserCircle className='profileIcon'/>
                 </div>
             </div>
@@ -80,8 +83,18 @@ const Topbar = () => {
                     <FilterTab key={index} icon={obj.image} caption={obj.caption}/>
                 ))
             }
-           
+            
           </div>
+          <div className="filterIconsContainer">
+            <div className="arrowWrapper">
+                <ArrowRight/>
+            </div>
+            <div className="filterBtnContainer">
+                <CiSliderHorizontal className="filterSlider"/>
+                <span className="filters">Filters</span>
+            </div>
+          </div>
+          
         </div>
 
     </div>
