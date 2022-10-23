@@ -2,15 +2,16 @@
     display: flex;
     width: 100%;
     flex-direction: column;
-    border: 1px solid black;
-    height: 160px;
+    background: white;
+    height: 200px;
     position: fixed;
     top: 0;
+    z-index: 999;
 }
 
 .topbarTop{
     width: 100%;
-    height: 60px;
+    height: 50%;
     align-items: center;
     justify-content: flex-start;
     padding-left: 30px;
@@ -32,9 +33,9 @@
 }
 
 .logoText{
-    font-size: 20px;
+    font-size: 1.5rem;
     font-family: 'Open Sans';
-    font-weight: 700;
+    font-weight: 600;
     color: var(--airbnb-color);
 }
 
@@ -43,8 +44,9 @@
     justify-content: center;
     display: flex;
     align-items: center;
-    height: 40px;
+    height: 60%;
     color: var(--primary-black);
+    font-size: 0.8rem;
 }
 
 .searchBar, .sbContainer{
@@ -71,7 +73,7 @@
     justify-content: center;
     cursor: pointer;
     text-align: center;
-    font-size: 11px;
+    font-size: 0.9rem;
     border-right: 1px solid var(--primary-grey);
 }
 .anywhere, .anyweek{
@@ -169,14 +171,14 @@
 }
 
 .becomeHost{
-    font-size: 11px;
+    font-size: 0.9rem;
     color: var(--primary-black);
     font-weight: 600;
     cursor: pointer;
 }
 
 .globe{
-    font-size: 20px;
+    font-size: 1.2rem;
     color: var(--primary-black);
     cursor: pointer;
 }
@@ -185,16 +187,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 35px;
+    height: 40%;
     width:20%;
     border: 1px solid var(--primary-grey);
-    padding: 10px;
+    padding: .5rem .1rem;
     border-radius: 30px;
     gap: 10px;
+    position: relative;
 }
 
 .menuIcon{
-    font-size: medium !important;
+    font-size: 1.5rem !important;
     cursor: pointer;
 }
 
@@ -204,10 +207,28 @@
     cursor: pointer;
 }
 
+.counter{
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid white;
+    position: absolute;
+    right:0.35rem;
+    bottom:1.6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6rem;
+    color:white;
+    background: var(--airbnb-color);
+    padding:.2rem;
+    
+}
+
 
 .topBarBottom{
     width: 100%;
-    height: 80px;
+    height: 60%;
     display: flex;
     padding: 25px 0px 0px 15px;
     overflow: auto;
@@ -224,6 +245,8 @@
     display: flex;
     flex-direction: row;
     width: 2000px;
+    height: 100%;
+    
     
 }
 
@@ -308,15 +331,22 @@
 }
 
 @media  screen and (max-width:900px) {
+
+    .logoText{
+        display: none;
+    }
+    .topbarTop{
+        
+    }
     .tbLeft{
         flex: 0.1;
     }
 
     .tbCenter{
-        flex: 1.6;
+        flex: 1.5;
     }
     .tbRight{
-        flex: 1.3;
+        flex: 1.4;
     }
     .filterIconsContainer{
         display: none;
@@ -325,11 +355,60 @@
 }
 
 
+@media screen and (max-width:750px){
+    .topbar{
+        border-bottom: 2px solid var(--primary-grey);
+        height: 170px;
+        box-sizing: content-box;
+    }
+    .topbarTop{
+        border-bottom: none;
+        padding: 0px;
+        height: 60%;
+    }
+    .topBarBottom{
+        padding-top: 0px;
+        padding-bottom: 10px;
+        margin: 0px;
+        justify-content: flex-start;
+        height: 60%;
+        box-sizing: content-box;
+    }
+    .filterTabsWrapper{
+        padding-bottom: 0px;
+        box-sizing: content-box;
+        margin: 0px;
+        height: 100%;
+        overflow-y: visible;
+    }
+
+    .sbContainer{
+        display: none;
+    }
+    
+    .searchBarMobile{
+        display: flex;
+        width: 100%;
+        position: relative;
+    }
+    
+    .sbmRight{
+        position: absolute;
+        right: 7px;
+       
+    }
+    .tbLeft,.tbRight{
+        display: none;
+    }
+}
+
+
 
 @media  screen and (max-width:600px) {
-
+    .topbar{
+        padding-top: 20px;
+    }
     .topbarTop{
-        padding: 0;
         border-bottom: none;
     }
     .tbLeft{
@@ -355,6 +434,11 @@
     .tbRight{
         display: none;
     }
+
+    .filterTabsWrapper{ 
+        padding-bottom: 15px;
+    }
+    
     .filterIconsContainer{
         display: none;
     }
@@ -363,6 +447,10 @@
 
 
 @media  screen and (max-width:400px) {
+    .topbar{
+        padding-top:20px;
+        border-bottom: 2px solid var(--primary-grey);
+    }
     .topbarTop{
         padding: 0;
         border-bottom: none;
@@ -391,7 +479,13 @@
         display: none;
     }
 
+    .filterTabsWrapper{
+        
+        padding-bottom: 15px;
+    }
+
     .filterIconsContainer{
         display: none;
+        height: 100%;
     }
 }

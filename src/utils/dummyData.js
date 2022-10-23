@@ -51,6 +51,8 @@ import beach18 from '../assets/beachfronts/px-beach18.svg'
 import beach19 from '../assets/beachfronts/px-beach19.svg'
 import beach20 from '../assets/beachfronts/px-beach20.svg'
 
+import {nanoid} from 'nanoid';
+
 
 
 export const iconObjects = [
@@ -263,6 +265,7 @@ export const homes= [
 
 export const beachfronts = [
     {
+        id:nanoid(),
         host:"Yemisi",
         img:beach1,
         date:"Nov 1-15",
@@ -272,6 +275,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Bisola-Randle",
         img:beach2,
         date:"Nov 1-15",
@@ -281,6 +285,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Vaughn",
         img:beach3,
         date:"Nov 1-15",
@@ -290,6 +295,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Emeka",
         img:beach4,
         date:"Nov 1-15",
@@ -299,6 +305,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Yewande",
         img:beach5,
         date:"Nov 1-15",
@@ -308,6 +315,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Kemisola",
         img:beach6,
         date:"Nov 1-15",
@@ -317,6 +325,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Ogunfemi",
         img:beach7,
         date:"Nov 1-15",
@@ -326,6 +335,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Charles",
         img:beach8,
         date:"Nov 1-15",
@@ -335,6 +345,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Odunola",
         img:beach9,
         date:"Nov 1-15",
@@ -344,6 +355,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Okorafor",
         img:beach10,
         date:"Nov 1-15",
@@ -353,6 +365,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Nelson",
         img:beach11,
         date:"Nov 1-15",
@@ -362,6 +375,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Lota",
         img:beach12,
         date:"Nov 1-15",
@@ -371,6 +385,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Ruby",
         img:beach13,
         date:"Nov 1-15",
@@ -380,6 +395,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Chiamaka",
         img:beach14,
         date:"Nov 1-15",
@@ -389,6 +405,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Akinsola",
         img:beach15,
         date:"Nov 1-15",
@@ -398,6 +415,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Temilade",
         img:beach16,
         date:"Nov 1-15",
@@ -407,6 +425,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Princewill",
         img:beach17,
         date:"Nov 1-15",
@@ -416,6 +435,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Caleb",
         img:beach18,
         date:"Nov 1-15",
@@ -425,6 +445,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Tinu",
         img:beach19,
         date:"Nov 1-15",
@@ -434,6 +455,7 @@ export const beachfronts = [
         rating: 5
     },
     {
+        id:nanoid(),
         host:"Feyisayo",
         img:beach20,
         date:"Nov 1-15",

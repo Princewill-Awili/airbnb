@@ -1,7 +1,7 @@
 .filterTab{
     display: flex;
     width: 90px;
-    height: 50px;
+    height: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -21,24 +21,41 @@
 }
 
 .filterTab>img{
-    width: 20px;
-    height: 20px;
+    width: 1.5rem;
+    height: 1.5rem;
     object-fit: cover;
     
 }
 
 .filterCaption{
-    font-size: 10px;
+    font-size: 0.7rem;
     font-weight: 600;
     border-bottom: 2px solid transparent;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
 }
 
 .filterTab:hover > .filterCaption{
-    border-bottom: 2px solid var(--primary-grey);
+    border-bottom: 2px solid black;
 }
 
 .filterTab:hover>.filter{
     display: none;
 }
 
+
+
+/**************************************************************************/
+@media screen and (max-width:750px) {
+    .filterTab{
+        padding:0px;
+        margin: 0px;
+        height: 100%;
+    }
+   
+}
+@media screen and (max-width:400px) {
+    .filterTab{
+        padding-top: 10px;
+        height: 100%;
+    }
+}

@@ -5,6 +5,39 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 20px 20px;
+    padding: 10px 20px;
+    position: relative;
+    top: 200px;
+}
+
+@media screen and (max-width:1080px){
+    .cardsContainer{
+        top:200px;
+    }
+}
+
+@media  screen and (max-width:900px) {
+    .cardsContainer{
+        top:200px;
+    }
+}
+
+
+
+@media  screen and (max-width:750px) {
+    .cardsContainer{
+        top:160px;
+    }
+}
+@media screen and (max-width:600px){
+    .cardsContainer{
+        top: 200px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .cardsContainer{
+        top: 200px;
+    }
 }
 

@@ -1,3 +1,5 @@
+import { useEffect, useState, useContext } from 'react'
+import { states } from '../../utils/context'
 import  './topbar.css'
 import {FaAirbnb, FaUserCircle} from 'react-icons/fa'
 import {BiSearch, BiGlobe} from 'react-icons/bi'
@@ -18,8 +20,25 @@ import { iconObjects } from '../../utils/dummyData'
 
 
 const Topbar = () => {
+
+    const {liked} = useContext(states);
+
+    const [numOfLikes,setNumOfLikes] = useState(JSON.parse(localStorage.getItem('likesCount')));
+
+    useEffect(()=>{
+        
+        if(liked){
+            let newLikes;
+            newLikes = JSON.parse(localStorage.getItem('likesCount'));
+            setNumOfLikes(newLikes);
+        }
+        
+    },[liked])
+
+   
+
   return (
-    <div className="topBar">
+    <div className="topbar">
         <div className="topbarTop">
             <div className="tbLeft">
                 <FaAirbnb className='logo'/>
@@ -73,6 +92,9 @@ const Topbar = () => {
                 <div className="profileContainer">
                     <MenuIcon className='menuIcon'/>
                     <FaUserCircle className='profileIcon'/>
+                    <span className="counter">
+                        {numOfLikes}
+                    </span>
                 </div>
             </div>
         </div>

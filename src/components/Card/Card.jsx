@@ -1,5 +1,5 @@
-import { useState } from "react";
-
+import { useContext } from "react";
+import { states } from "../../utils/context";
 
 import "./card.css"
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
@@ -8,7 +8,18 @@ import StarIcon from '@mui/icons-material/Star';
 
 const Card = ({img,searchCategory,desc,host,bedrooms,date,rating,price}) => {
 
-    const [liked, setLiked] = useState(false);
+    const {liked, setLiked} = useContext(states);
+
+    const updateLikeCount = () =>{
+        const likesNum = JSON.parse(localStorage.getItem('likesCount'));
+
+        if(likesNum){
+            const newLikesNum = likesNum + 1;
+            localStorage.setItem('likesCount',JSON.stringify(newLikesNum));
+        }else{
+            localStorage.setItem('likesCount', JSON.stringify(1));
+        }
+    }
 
   return (
     <div className='card'>
@@ -16,7 +27,10 @@ const Card = ({img,searchCategory,desc,host,bedrooms,date,rating,price}) => {
             <img src={img} alt="cardPic" className='cardPic' />
             <FavoriteBorderIcon 
                 className='likeIcon1' 
-                onClick={()=> setLiked(!liked)}
+                onClick={()=>{
+                    setLiked(!liked);
+                    updateLikeCount();
+                } }
             />
             <FavoriteIcon 
                 className='likeIcon2'  
