@@ -276,7 +276,7 @@ export const beachfronts = [
     },
     {
         id:nanoid(),
-        host:"Bisola-Randle",
+        host:"Bisola",
         img:beach2,
         date:"Nov 1-15",
         desc:"Luxury Bedroom Apartment",
