@@ -54,7 +54,7 @@
     height: 100%;
     width: 90%;
     box-shadow: var(--customShadow);
-    border: 1px solid var(--primary-grey);
+    border: 2px solid var(--primary-grey);
     border-radius: 30px;
 }
 .sbContainer{
@@ -318,6 +318,9 @@
     .tbRight{
         flex: 1.3;
     }
+    .filterIconsContainer{
+        display: none;
+    }
      
 }
 
@@ -352,7 +355,9 @@
     .tbRight{
         display: none;
     }
-    
+    .filterIconsContainer{
+        display: none;
+    }
 }
 
 

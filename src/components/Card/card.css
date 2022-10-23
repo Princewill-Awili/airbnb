@@ -1,0 +1,126 @@
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width:23%;
+    height: 350px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    font-size: 12px;
+    color:var(--primary-black);
+    font-weight: 500;
+    
+}
+
+.imgFrame{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cardPic{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    cursor: pointer;
+
+}
+
+.likeIcon1, .likeIcon2{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color:white;
+    cursor: pointer;
+    
+}
+
+.likeIcon1{
+    z-index: 4;
+    font-size: 15px;
+}
+
+.likeIcon2{
+    z-index: 3;
+    font-size: 14px;
+}
+
+.cardInfoTop{
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.category{
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.ratingContainer{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 3px;
+}
+.ratingContainer>svg{
+    font-size: 14px;
+    color:var(--primary-black)
+    
+}
+
+.desc, .host, .beds, .date{
+    color:grey;
+    margin-bottom: 3px;
+}
+
+.price>span{
+    font-weight: bold;
+
+}
+
+.price{
+    font-weight: 500;
+}
+
+
+
+/****************************************************************/
+
+@media screen and (max-width:1080px) {
+    
+}
+
+@media screen and (max-width:900px) {
+    .card{
+        width: 30%;
+    }
+    .imgFrame{
+        transform: scale(0.95);
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .card{
+        width: 48%;
+    }
+
+    .imgFrame{
+        transform: scale(0.95);
+    }
+}
+
+@media screen and (max-width:400px) {
+    .card{
+        width: 100%;
+    }
+    
+}

@@ -1,16 +1,33 @@
 //Importing all the icons
-import AmazingPools from '../assets/icons/AmazingPools.jpg'
-import Beach from '../assets/icons/Beach.jpg'
-import BedAndBreakFAst from '../assets/icons/BedAndBreakFast.jpg'
-import Caves from '../assets/icons/Caves.jpg'
-import CountrySide from '../assets/icons/CountrySide.jpg'
-import Design from '../assets/icons/Design.jpg'
-import HouseBoats from '../assets/icons/HouseBoats.jpg'
-import IconicCities from '../assets/icons/IconicCities.jpg'
-import Mansions from '../assets/icons/Mansions.jpg'
-import Omg from '../assets/icons/Omg.jpg'
-import ShareHomes from '../assets/icons/SharedHomes.jpg'
-import Tropical from '../assets/icons/Tropical.jpg'
+import AmazingPools from '../assets/svgicons/px-AmazingPools.svg'
+import Beach from '../assets/svgicons/px-Beach.svg'
+import BedAndBreakFAst from '../assets/svgicons/px-BedAndBreakFast.svg'
+import Caves from '../assets/svgicons/px-Caves.svg'
+import CountrySide from '../assets/svgicons/px-CountrySide.svg'
+import Design from '../assets/svgicons/px-Design.svg'
+import HouseBoats from '../assets/svgicons/px-HouseBoats.svg'
+import IconicCities from '../assets/svgicons/px-IconicCities.svg'
+import Mansions from '../assets/svgicons/px-Mansions.svg'
+import Omg from '../assets/svgicons/px-Omg.svg'
+import ShareHomes from '../assets/svgicons/px-SharedHomes.svg'
+import Tropical from '../assets/svgicons/px-Tropical.svg'
+
+//Importing Apartment Pictures
+import apt1 from '../assets/svgapts/px-apt1.svg'
+import apt2 from '../assets/svgapts/px-apt2.svg'
+import apt3 from '../assets/svgapts/px-apt3.svg'
+import apt4 from '../assets/svgapts/px-ap4.svg'
+import apt5 from '../assets/svgapts/px-apt5.svg'
+import apt6 from '../assets/svgapts/px-apt6.svg'
+import apt7 from '../assets/svgapts/px-apt7.svg'
+import apt8 from '../assets/svgapts/px-apt8.svg'
+import apt9 from '../assets/svgapts/px-apt9.svg'
+import apt10 from '../assets/svgapts/px-apt10.svg'
+import apt11 from '../assets/svgapts/px-apt11.svg'
+import apt12 from '../assets/svgapts/px-apt12.svg'
+import apt13 from '../assets/svgapts/px-apt13.svg'
+import apt14 from '../assets/svgapts/px-apt14.svg'
+import apt15 from '../assets/svgapts/px-apt15.svg'
 
 
 export const iconObjects = [
@@ -30,76 +47,192 @@ export const iconObjects = [
 ]
 
 
-const homes= [
-    {
-        host: "Ebube", 
-        img: "https://archello.s3.eu-central-1.amazonaws.com/images/2020/11/03/nid-interior-modern-interior-design-of-2-bedroom-apartment-apartments-archello.1604392458.3519.png"
-    },
-    {
-        host:"Kelvin",
-        img:"http://bestdesignideas.com/wp-content/uploads/2015/11/Modern-Apartment-In-European-Style-In-Taiwan-From-Fertility-Design-Studio-1.jpg",
-        date:""
-    },
+export const homes= [
+    
     {
         host:"Matthew",
-        img:"https://cdn.decoratorist.com/wp-content/uploads/modern-apartment-european-style-taiwan-346152.jpg",
-        date:""
+        img:apt1,
+        date:"Oct 25-30",
+        desc:"Well Furnished Shortlet Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 13.50,
+        rating: Math.floor(Math.random()*5)
     },
     {
         host:"Olatunji",
-        img:"https://i.pinimg.com/736x/dd/31/64/dd3164a2780bb2094cd3f5e0d2d45007--spacious-living-room-white-living-rooms.jpg",
-        date:""
+        img:apt2,
+        date:"Dec 1-5",
+        desc:"Beautiful Luxury Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 24.50,
+        rating: Math.floor(Math.random()*5)
     },
     {
         host:"Gbemisola",
-        img:"https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/51/67/a5.jpg",
-        date:""
+        img:apt3,
+        date:"Oct 23-30",
+        desc:"Luxury Bedroom Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 24.50,
+        rating: Math.floor(Math.random()*5)
     },
     {
         host:"Ruben",
-        img:"https://i0.wp.com/albertandwand.com/newsite/wp-content/uploads/2021/04/3dc9f29b-1fad-453a-8394-b4194c9b2658-scaled.jpg?fit=2560%2C1920&ssl=1",
-        date:""
+        img:apt4,
+        date:"Nov 17-21",
+        desc:"Luxury Bedroom Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 24.50,
+        rating: Math.floor(Math.random()*5)
     },
     {
         host:"Oswald",
-        img:"https://buyletlivespaces.nyc3.digitaloceanspaces.com/property-images/images/IMG-20211111-WA0014-1647098277.jpg",
-        date:""
+        img:apt5,
+        date:"Nov 14-18",
+        desc:"Luxury Bedroom Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 24.50,
+        rating: Math.floor(Math.random()*5)
     },
     {
         host:"Yemi",
-        img:"https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/ea/56/90.jpg",
-        date:""
+        img:apt6,
+        date:"Dec 4-14",
+        desc:"Luxury Bedroom Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 24.50,
+        rating: Math.floor(Math.random()*5)
     },
     {
         host:"Lotanna",
-        img:"https://sujimotonig.com/wp-content/uploads/2022/01/PIX-A.jpeg",
-        date:""
+        img:apt7,
+        date:"Oct 29-31",
+        desc:"Luxury Bedroom Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 24.50,
+        rating: Math.floor(Math.random()*5)
     },
     {
         host:"Omasola",
-        img:"https://alexis.lindaikejisblog.com/photos/shares/60786f0c02521.jpeg",
-        date:""
+        img:apt8,
+        date:"Dec 20-25",
+        desc:"Luxury Bedroom Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 24.50,
+        rating: Math.floor(Math.random()*5)
+    },
+    {
+        host:"Debbie",
+        img:apt9,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 24.50,
+        rating: Math.floor(Math.random()*5)
+    },
+    {
+        host:"Rowland",
+        img:apt10,
+        date:"Oct 25-30",
+        desc:"Luxury Bedroom Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 24.50,
+        rating: Math.floor(Math.random()*5)
+    },
+    
+    {
+        host:"Nkiru",
+        img:apt11,
+        date:"Nov 8-10",
+        desc:"Luxury Bedroom Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 24.50,
+        rating: Math.floor(Math.random()*5)
+    },
+    {
+        host: "Ebube", 
+        img: apt12,
+        date:"Oct 24-27",
+        desc:"Luxury Bedroom Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 14.50,
+        rating: Math.floor(Math.random()*5)
+    },
+    {
+        host:"Kelvin",
+        img:apt13,
+        date:"Nov 2-5",
+        desc:"Terraced 5 Bedroom flat ",
+        bedrooms:5,
+        price: 44.50,
+        rating: Math.floor(Math.random()*5)
+    },
+    
+    {
+        host:"Oluwaseun",
+        img:"https://plistbooking.com/wp-content/uploads/2020/09/5-Amazing-Facts-about-Shortlet-Apartments-in-Lagos-Nigeria-1170x853.jpg",
+        date:"Dec 20-30",
+        desc:"Luxury Bedroom Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 24.50,
+        rating: Math.floor(Math.random()*5)
+    }
+    ,
+    {
+        host:"Yemi",
+        img:"https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/ea/56/90.jpg",
+        date:"Dec 4-14",
+        desc:"Luxury Bedroom Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 24.50,
+        rating: Math.floor(Math.random()*5)
     },
     {
         host:"Debbie",
         img:"https://www.bellanaija.com/wp-content/uploads/2021/11/image3.jpg",
-        date:""
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 24.50,
+        rating: Math.floor(Math.random()*5)
     },
     {
-        host:"",
+        host:"Rowland",
         img:"https://diywithjoy.com/wp-content/uploads/2021/03/Picture-2png.png",
-        date:""
+        date:"Oct 25-30",
+        desc:"Luxury Bedroom Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 24.50,
+        rating: Math.floor(Math.random()*5)
     },
     
     {
-        host:"",
+        host:"Nkiru",
         img:"https://nairametrics.com/wp-content/uploads/2021/11/Shortlet-1.jpg?w=900&h=570&crop=1",
-        date:""
+        date:"Nov 8-10",
+        desc:"Luxury Bedroom Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 24.50,
+        rating: Math.floor(Math.random()*5)
     },
-    
+
     {
-        host:"",
+        host:"Oluwaseun",
         img:"https://plistbooking.com/wp-content/uploads/2020/09/5-Amazing-Facts-about-Shortlet-Apartments-in-Lagos-Nigeria-1170x853.jpg",
-        date:""
+        date:"Dec 20-30",
+        desc:"Luxury Bedroom Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 24.50,
+        rating: Math.floor(Math.random()*5)
+    }
+    ,
+    {
+        host:"Yemi",
+        img:"https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/ea/56/90.jpg",
+        date:"Dec 4-14",
+        desc:"Luxury Bedroom Apartment ",
+        bedrooms:Math.floor(Math.random()*5)+1,
+        price: 24.50,
+        rating: Math.floor(Math.random()*5)
     },
 ]
