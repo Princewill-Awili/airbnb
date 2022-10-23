@@ -1,12 +1,22 @@
 import './filtertab.css'
+import { useContext } from 'react'
+import { states } from '../../utils/context'
 
 
-const FilterTab = ({icon, caption}) => {
+const FilterTab = ({icon, caption,val}) => {
+
+  const { filterMode,setFilterMode } = useContext(states);
+
+  const handleFilter= () =>{
+    setFilterMode(val)
+  }
+
+
   return (
-    <div className='filterTab'>
-        <div className="filter"></div>
+    <div className='filterTab' onClick={handleFilter} >
+        <div className="filter" style={{display:filterMode === val ?"none":""}}></div>
         {icon}
-        <span className="filterCaption">{caption}</span>
+        <span className="filterCaption" style={{borderBottom: filterMode === val ? "2px solid black" : ""}}>{caption}</span>
     </div>
   )
 }

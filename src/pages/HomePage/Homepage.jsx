@@ -29,7 +29,7 @@ const Homepage = () => {
           }
 
           {
-            filterMode === 'sharedHomes' && (
+            filterMode === 'shared' && (
               <>
               {
                 homes.map((item,index)=>(

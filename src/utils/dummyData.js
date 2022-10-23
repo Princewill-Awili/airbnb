@@ -56,18 +56,18 @@ import {nanoid} from 'nanoid';
 
 
 export const iconObjects = [
-    {caption:"Beach",image:<img src={Beach} alt="icon"/>},
-    {caption:"Shared Homes", image:<img src={ShareHomes} alt="icon"/>},
-    {caption:"OMG!", image:<img src={Omg} alt="icon"/>},
-    {caption:"Mansions", image:<img src={Mansions} alt="icon"/>},
-    {caption:"Countryside", image:<img src={CountrySide} alt="icon"/>},
-    {caption:"Iconic Cities", image:<img src={IconicCities} alt="icon"/>},
-    {caption:"Design", image:<img src={Design} alt="icon"/>},
-    {caption:"Caves", image:<img src={Caves} alt="icon"/>},
-    {caption:"Tropical", image:<img src={Tropical} alt="icon"/>},
-    {caption:"Houseboats", image:<img src={HouseBoats} alt="icon"/>},
-    {caption:"Amazing Pools", image:<img src={AmazingPools} alt="icon"/>},
-    {caption:"Bed & breakfast", image:<img src={BedAndBreakFAst} alt="icon"/>},
+    {caption:"Beach",image:<img src={Beach} alt="icon"/>,value:'beach'},
+    {caption:"Shared Homes", image:<img src={ShareHomes} alt="icon" />,value:'shared'},
+    {caption:"OMG!", image:<img src={Omg} alt="icon"/>,value:'omg'},
+    {caption:"Mansions", image:<img src={Mansions} alt="icon"/>,value:'mansions'},
+    {caption:"Countryside", image:<img src={CountrySide} alt="icon"/>,value:'country'},
+    {caption:"Iconic Cities", image:<img src={IconicCities} alt="icon"/>,value:'iconic'},
+    {caption:"Design", image:<img src={Design} alt="icon"/>,value:'design'},
+    {caption:"Caves", image:<img src={Caves} alt="icon"/>,value:'caves'},
+    {caption:"Tropical", image:<img src={Tropical} alt="icon"/>,value:'tropical'},
+    {caption:"Houseboats", image:<img src={HouseBoats} alt="icon"/>,value:'house'},
+    {caption:"Amazing Pools", image:<img src={AmazingPools} alt="icon"/>,value:'amazing'},
+    {caption:"Bed & breakfast", image:<img src={BedAndBreakFAst} alt="icon"/>,value:'bed'},
     
 ]
 

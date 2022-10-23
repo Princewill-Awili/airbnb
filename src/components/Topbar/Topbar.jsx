@@ -102,7 +102,7 @@ const Topbar = () => {
           <div className="filterTabsWrapper">
             {
                 iconObjects.map((obj,index)=>(
-                    <FilterTab key={index} icon={obj.image} caption={obj.caption}/>
+                    <FilterTab key={index} icon={obj.image} caption={obj.caption} val={obj.value}/>
                 ))
             }
             
