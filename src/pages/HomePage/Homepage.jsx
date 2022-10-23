@@ -5,6 +5,8 @@ import { useContext } from 'react'
 import {homes, beachfronts} from '../../utils/dummyData'
 
 import Card from '../../components/Card/Card'
+import Footer from '../../components/Footer/Footer'
+
 import { states } from '../../utils/context'
 
 
@@ -33,13 +35,14 @@ const Homepage = () => {
               <>
               {
                 homes.map((item,index)=>(
-                  <Card key={index} {...item} searchCAtegory="Apartments in Lekki"/>
+                  <Card key={index} {...item} searchCategory="Apartments in Lekki"/>
                 ))
               }
               </>
             )
           } 
         </div>
+        <Footer/>
     </div>
   )
 }
