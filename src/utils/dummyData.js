@@ -29,6 +29,29 @@ import apt13 from '../assets/svgapts/px-apt13.svg'
 import apt14 from '../assets/svgapts/px-apt14.svg'
 import apt15 from '../assets/svgapts/px-apt15.svg'
 
+//Importing Beachfront Apartments
+import beach1 from '../assets/beachfronts/px-beach1.svg'
+import beach2 from '../assets/beachfronts/px-beach2.svg'
+import beach3 from '../assets/beachfronts/px-beach3.svg'
+import beach4 from '../assets/beachfronts/px-beach4.svg'
+import beach5 from '../assets/beachfronts/px-beach5.svg'
+import beach6 from '../assets/beachfronts/px-beach6.svg'
+import beach7 from '../assets/beachfronts/px-beach7.svg'
+import beach8 from '../assets/beachfronts/px-beach19.svg'
+import beach9 from '../assets/beachfronts/px-beach9.svg'
+import beach10 from '../assets/beachfronts/px-beach10.svg'
+import beach11 from '../assets/beachfronts/px-beach11.svg'
+import beach12 from '../assets/beachfronts/px-beach12.svg'
+import beach13 from '../assets/beachfronts/px-beach13.svg'
+import beach14 from '../assets/beachfronts/px-beach14.svg'
+import beach15 from '../assets/beachfronts/px-beach15.svg'
+import beach16 from '../assets/beachfronts/px-beach16.svg'
+import beach17 from '../assets/beachfronts/px-beach17.svg'
+import beach18 from '../assets/beachfronts/px-beach18.svg'
+import beach19 from '../assets/beachfronts/px-beach19.svg'
+import beach20 from '../assets/beachfronts/px-beach20.svg'
+
+
 
 export const iconObjects = [
     {caption:"Beach",image:<img src={Beach} alt="icon"/>},
@@ -234,5 +257,189 @@ export const homes= [
         bedrooms:Math.floor(Math.random()*5)+1,
         price: 24.50,
         rating: Math.floor(Math.random()*5)
+    },
+]
+
+
+export const beachfronts = [
+    {
+        host:"Yemisi",
+        img:beach1,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Bisola-Randle",
+        img:beach2,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Vaughn",
+        img:beach3,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Emeka",
+        img:beach4,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Yewande",
+        img:beach5,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Kemisola",
+        img:beach6,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Ogunfemi",
+        img:beach7,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Charles",
+        img:beach8,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Odunola",
+        img:beach9,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Okorafor",
+        img:beach10,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Nelson",
+        img:beach11,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Lota",
+        img:beach12,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Ruby",
+        img:beach13,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Chiamaka",
+        img:beach14,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Akinsola",
+        img:beach15,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Temilade",
+        img:beach16,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Princewill",
+        img:beach17,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Caleb",
+        img:beach18,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Tinu",
+        img:beach19,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
+    },
+    {
+        host:"Feyisayo",
+        img:beach20,
+        date:"Nov 1-15",
+        desc:"Luxury Bedroom Apartment",
+        bedrooms:3,
+        price: 24.50,
+        rating: 5
     },
 ]

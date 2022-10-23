@@ -1,22 +1,44 @@
 import './homepage.css'
 import Topbar from '../../components/Topbar/Topbar'
-import {homes} from '../../utils/dummyData'
+import { useContext } from 'react'
+
+import {homes, beachfronts} from '../../utils/dummyData'
+
 import Card from '../../components/Card/Card'
+import { states } from '../../utils/context'
+
 
 const Homepage = () => {
 
-  console.log(homes.length)
+  const { filterMode } = useContext(states);
 
   return (
     <div className='homepage'>
         <Topbar/>
         <div className="cardsContainer">
           {
-            homes.map((home,index)=>(
-              <Card key={index} {...home} searchCategory="Apartment in Lekki"/>
-            ))
+            filterMode ==="beach" && (
+              <>
+                {
+                  beachfronts.map((item,index)=>(
+                    <Card key={index} {...item} searchCategory="Beach front Apartments in Lekki"/>
+                  ))
+                }
+              </>
+            )
           }
-          
+
+          {
+            filterMode === 'sharedHomes' && (
+              <>
+              {
+                homes.map((item,index)=>(
+                  <Card key={index} {...item} searchCAtegory="Apartments in Lekki"/>
+                ))
+              }
+              </>
+            )
+          } 
         </div>
     </div>
   )
