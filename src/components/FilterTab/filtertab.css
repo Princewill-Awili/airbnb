@@ -1,6 +1,6 @@
 .filterTab{
     display: flex;
-    width: 90px;
+    width: 100px;
     height: 100%;
     flex-direction: column;
     align-items: center;
@@ -21,14 +21,14 @@
 }
 
 .filterTab>img{
-    width: 1.5rem;
+    width: 1.6rem;
     height: 1.5rem;
     object-fit: cover;
     
 }
 
 .filterCaption{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
     border-bottom: 2px solid transparent;
     padding-bottom: 10px;
@@ -36,7 +36,7 @@
 }
 
 .filterTab:hover > .filterCaption{
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
 }
 
 .filterTab:hover>.filter{

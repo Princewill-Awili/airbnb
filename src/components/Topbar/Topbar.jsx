@@ -21,17 +21,7 @@ import { iconObjects } from '../../utils/dummyData'
 
 const Topbar = () => {
 
-    const {liked, likedItems} = useContext(states);
-
-    
-
-    useEffect(()=>{
-        
-      
-        
-    },[liked])
-
-   
+  const { likedItems } = useContext(states);
 
   return (
     <div className="topbar">

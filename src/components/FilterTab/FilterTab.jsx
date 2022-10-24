@@ -16,7 +16,7 @@ const FilterTab = ({icon, caption,val}) => {
     <div className='filterTab' onClick={handleFilter} >
         <div className="filter" style={{display:filterMode === val ?"none":""}}></div>
         {icon}
-        <span className="filterCaption" style={{borderBottom: filterMode === val ? "2px solid black" : ""}}>{caption}</span>
+        <span className="filterCaption" style={{borderBottom: filterMode === val ? "3px solid black" : ""}}>{caption}</span>
     </div>
   )
 }
