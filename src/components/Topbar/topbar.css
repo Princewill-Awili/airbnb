@@ -164,7 +164,6 @@
 }
 
 
-/***********************************************************/
 .tbRight{
     justify-content: flex-end;
     gap: 20px;
@@ -297,21 +296,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**********************MEDIA QUERIES****************************************/
 
 
@@ -363,7 +347,6 @@
      
 }
 
-
 @media screen and (max-width:750px){
     .topbar{
         border-bottom: 2px solid var(--primary-grey);
@@ -399,6 +382,13 @@
         display: flex;
         width: 100%;
         position: relative;
+        height:75px;
+        align-items: center;
+    }
+
+    .filterIcon{
+        font-size: 1.4rem;
+        font-weight: bold;
     }
     
     .sbmRight{
@@ -410,8 +400,6 @@
         display: none;
     }
 }
-
-
 
 @media  screen and (max-width:600px) {
     .topbar{
@@ -437,6 +425,7 @@
 
     .searchBarMobile{
         display: flex;
+        height: 75px;
     }
 
 
@@ -453,8 +442,6 @@
     }
 }
 
-
-
 @media  screen and (max-width:400px) {
     .topbar{
         padding-top:20px;
@@ -463,6 +450,7 @@
     .topbarTop{
         padding: 0;
         border-bottom: none;
+        height: 60px;
     }
     .tbLeft{
         display: none;
@@ -470,17 +458,19 @@
 
     .tbCenter{
         width: 100%;
-        height: 70px;
+        height: 60px;
         border-radius: 70px;
         padding: 0;
     }
 
     .sbContainer{
         display: none;
+        height: 60px;
     }
 
     .searchBarMobile{
         display: flex;
+        height: 60px;
     }
 
 

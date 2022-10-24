@@ -1,20 +1,16 @@
 import './footer.css'
 import { BiGlobe, BiMessage} from 'react-icons/bi'
 import {RiArrowUpSLine} from 'react-icons/ri'
-
 import {HiOutlineSearch} from 'react-icons/hi'
 import {FaAirbnb} from 'react-icons/fa'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import {CgProfile} from 'react-icons/cg'
-
 import {useState} from 'react'
 
  
 const Footer = () => {
 
-    const [option, setOption ] = useState('explore');
-
-
+  const [option, setOption ] = useState('explore');
 
   return (
     <div className='footer'>

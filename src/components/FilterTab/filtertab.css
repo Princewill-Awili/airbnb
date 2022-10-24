@@ -30,7 +30,7 @@
 .filterCaption{
     font-size: 0.8rem;
     font-weight: 600;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
     padding-bottom: 10px;
     color:black;
 }
@@ -45,7 +45,6 @@
 
 
 
-/**************************************************************************/
 @media screen and (max-width:750px) {
     .filterTab{
         padding:0px;

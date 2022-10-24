@@ -13,12 +13,19 @@ import {homes, beachfronts} from '../../utils/dummyData'
 const Like = ({id}) => {
     const [liked,setLiked] = useState(false);
     const allListings = [homes,beachfronts].flat();
-    const { setLikedItems } = useContext(states);
+    const { likedItems,setLikedItems } = useContext(states);
 
 
     const handleLikes = (e) =>{
-        const likedItem = allListings.find(item => item.id === e.target.id);
-        setLikedItems((prev)=> [...prev,likedItem]);
+        if(liked){
+            const unLikedItem = allListings.find(item => item.id === e.currentTarget.id);
+            setLikedItems(likedItems.filter(item => item.id !== unLikedItem.id))
+            
+        }else{
+            const likedItem = allListings.find(item => item.id === e.currentTarget.id);
+            setLikedItems((prev)=> [...prev,likedItem]);
+        } 
+        
     }
 
   return (

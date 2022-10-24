@@ -67,6 +67,23 @@
 }
 
 
+@media screen and (max-width:865px) {
+    .footer{
+        height: 10vh;
+        padding: 0px 30px;
+       } 
+    
+       .footerIcons{
+        display: flex;
+       }
+    
+       .footerRight, .footerLeft{
+        display: none;
+       }
+
+}
+
+
 @media screen and (max-width:400px) {
    .footer{
     height: 10vh;

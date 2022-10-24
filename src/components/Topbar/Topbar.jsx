@@ -1,20 +1,13 @@
-import { useEffect, useState, useContext } from 'react'
+import {  useContext } from 'react'
 import { states } from '../../utils/context'
 import  './topbar.css'
 import {FaAirbnb, FaUserCircle} from 'react-icons/fa'
 import {BiSearch, BiGlobe} from 'react-icons/bi'
-import {IoMenuOutline} from 'react-icons/io5'
 import {CiSliderHorizontal} from 'react-icons/ci'
 import {MdOutlineKeyboardArrowRight as ArrowRight} from 'react-icons/md'
-
 import MenuIcon from '@mui/icons-material/Menu';
-
-
 import FilterTab from '../FilterTab/FilterTab'
-
-//Importing Icons from dummyData
 import { iconObjects } from '../../utils/dummyData'
-
 
 
 

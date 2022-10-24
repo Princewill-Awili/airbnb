@@ -26,8 +26,6 @@ import apt10 from '../assets/svgapts/px-apt10.svg'
 import apt11 from '../assets/svgapts/px-apt11.svg'
 import apt12 from '../assets/svgapts/px-apt12.svg'
 import apt13 from '../assets/svgapts/px-apt13.svg'
-import apt14 from '../assets/svgapts/px-apt14.svg'
-import apt15 from '../assets/svgapts/px-apt15.svg'
 
 //Importing Beachfront Apartments
 import beach1 from '../assets/beachfronts/px-beach1.svg'
