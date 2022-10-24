@@ -67,7 +67,7 @@ const Homepage = () => {
           }
 
           {
-            filterMode ==="countryside" && (
+            filterMode ==="country" && (
               <>
                 {
                   beachfronts.map((item,index)=>(
@@ -79,43 +79,7 @@ const Homepage = () => {
           }
 
           {
-            filterMode ="iconic" && (
-              <>
-                {
-                  beachfronts.map((item,index)=>(
-                    <Card key={index} {...item} searchCategory="Beach front Apartments in Lekki"/>
-                  ))
-                }
-              </>
-            )
-          }
-
-          {
-            filterMode === 'design' && (
-              <>
-              {
-                homes.map((item,index)=>(
-                  <Card key={index} {...item} searchCategory="Apartments in Lekki"/>
-                ))
-              }
-              </>
-            )
-          } 
-
-          {
-            filterMode ==="caves" && (
-              <>
-                {
-                  beachfronts.map((item,index)=>(
-                    <Card key={index} {...item} searchCategory="Beach front Apartments in Lekki"/>
-                  ))
-                }
-              </>
-            )
-          }
-
-          {
-            filterMode === 'mansions' && (
+            filterMode === 'iconic' && (
               <>
               {
                 homes.map((item,index)=>(
@@ -127,7 +91,7 @@ const Homepage = () => {
           }
 
           {
-            filterMode ==="countryside" && (
+            filterMode ==="design" && (
               <>
                 {
                   beachfronts.map((item,index)=>(
@@ -137,6 +101,65 @@ const Homepage = () => {
               </>
             )
           }
+          {
+            filterMode === 'caves' && (
+              <>
+              {
+                homes.map((item,index)=>(
+                  <Card key={index} {...item} searchCategory="Apartments in Lekki"/>
+                ))
+              }
+              </>
+            )
+          }
+
+          {
+            filterMode ==="tropical" && (
+              <>
+                {
+                  beachfronts.map((item,index)=>(
+                    <Card key={index} {...item} searchCategory="Beach front Apartments in Lekki"/>
+                  ))
+                }
+              </>
+            )
+          }
+          {
+            filterMode === 'house' && (
+              <>
+              {
+                homes.map((item,index)=>(
+                  <Card key={index} {...item} searchCategory="Apartments in Lekki"/>
+                ))
+              }
+              </>
+            )
+          }
+
+          {
+            filterMode ==="amazing" && (
+              <>
+                {
+                  beachfronts.map((item,index)=>(
+                    <Card key={index} {...item} searchCategory="Beach front Apartments in Lekki"/>
+                  ))
+                }
+              </>
+            )
+          }
+          {
+            filterMode === 'bed' && (
+              <>
+              {
+                homes.map((item,index)=>(
+                  <Card key={index} {...item} searchCategory="Apartments in Lekki"/>
+                ))
+              }
+              </>
+            )
+          }
+
+         
         </div>
         <Footer/>
     </div>
