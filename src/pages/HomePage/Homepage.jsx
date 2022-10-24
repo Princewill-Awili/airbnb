@@ -41,6 +41,102 @@ const Homepage = () => {
               </>
             )
           } 
+
+          {
+            filterMode ==="omg" && (
+              <>
+                {
+                  beachfronts.map((item,index)=>(
+                    <Card key={index} {...item} searchCategory="Beach front Apartments in Lekki"/>
+                  ))
+                }
+              </>
+            )
+          }
+
+          {
+            filterMode === 'mansions' && (
+              <>
+              {
+                homes.map((item,index)=>(
+                  <Card key={index} {...item} searchCategory="Apartments in Lekki"/>
+                ))
+              }
+              </>
+            )
+          }
+
+          {
+            filterMode ==="countryside" && (
+              <>
+                {
+                  beachfronts.map((item,index)=>(
+                    <Card key={index} {...item} searchCategory="Beach front Apartments in Lekki"/>
+                  ))
+                }
+              </>
+            )
+          }
+
+          {
+            filterMode ="iconic" && (
+              <>
+                {
+                  beachfronts.map((item,index)=>(
+                    <Card key={index} {...item} searchCategory="Beach front Apartments in Lekki"/>
+                  ))
+                }
+              </>
+            )
+          }
+
+          {
+            filterMode === 'design' && (
+              <>
+              {
+                homes.map((item,index)=>(
+                  <Card key={index} {...item} searchCategory="Apartments in Lekki"/>
+                ))
+              }
+              </>
+            )
+          } 
+
+          {
+            filterMode ==="caves" && (
+              <>
+                {
+                  beachfronts.map((item,index)=>(
+                    <Card key={index} {...item} searchCategory="Beach front Apartments in Lekki"/>
+                  ))
+                }
+              </>
+            )
+          }
+
+          {
+            filterMode === 'mansions' && (
+              <>
+              {
+                homes.map((item,index)=>(
+                  <Card key={index} {...item} searchCategory="Apartments in Lekki"/>
+                ))
+              }
+              </>
+            )
+          }
+
+          {
+            filterMode ==="countryside" && (
+              <>
+                {
+                  beachfronts.map((item,index)=>(
+                    <Card key={index} {...item} searchCategory="Beach front Apartments in Lekki"/>
+                  ))
+                }
+              </>
+            )
+          }
         </div>
         <Footer/>
     </div>

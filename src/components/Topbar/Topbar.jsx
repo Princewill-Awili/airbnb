@@ -21,17 +21,13 @@ import { iconObjects } from '../../utils/dummyData'
 
 const Topbar = () => {
 
-    const {liked} = useContext(states);
+    const {liked, likedItems} = useContext(states);
 
-    const [numOfLikes,setNumOfLikes] = useState(JSON.parse(localStorage.getItem('likesCount')));
+    
 
     useEffect(()=>{
         
-        if(liked){
-            let newLikes;
-            newLikes = JSON.parse(localStorage.getItem('likesCount'));
-            setNumOfLikes(newLikes);
-        }
+      
         
     },[liked])
 
@@ -93,7 +89,7 @@ const Topbar = () => {
                     <MenuIcon className='menuIcon'/>
                     <FaUserCircle className='profileIcon'/>
                     <span className="counter">
-                        {numOfLikes}
+                        {likedItems.length}
                     </span>
                 </div>
             </div>

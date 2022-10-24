@@ -2,41 +2,38 @@ import { useContext } from "react";
 import { states } from "../../utils/context";
 
 import "./card.css"
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+
 import StarIcon from '@mui/icons-material/Star';
 
-const Card = ({img,searchCategory,desc,host,bedrooms,date,rating,price}) => {
+import Like from "../Like/Like";
 
-    const {liked, setLiked} = useContext(states);
+import {homes,beachfronts} from '../../utils/dummyData'
 
-    const updateLikeCount = () =>{
-        const likesNum = JSON.parse(localStorage.getItem('likesCount'));
 
-        if(likesNum){
-            const newLikesNum = likesNum + 1;
-            localStorage.setItem('likesCount',JSON.stringify(newLikesNum));
-        }else{
-            localStorage.setItem('likesCount', JSON.stringify(1));
-        }
+
+
+
+
+
+const Card = ({id,img,searchCategory,desc,host,bedrooms,date,rating,price}) => {
+
+    const allListings = [homes,beachfronts].flat();
+
+    const {liked, setLiked, likedItems, setLikedItems} = useContext(states);
+
+
+    const handleLikes = (e) =>{
+        const likedItem = allListings.find(item => item.id === e.target.id);
+        setLikedItems((prev)=> [...prev,likedItem]);
     }
+
+   
 
   return (
     <div className='card'>
         <div className="imgFrame">
             <img src={img} alt="cardPic" className='cardPic' />
-            <FavoriteBorderIcon 
-                className='likeIcon1' 
-                onClick={()=>{
-                    setLiked(!liked);
-                    updateLikeCount();
-                } }
-            />
-            <FavoriteIcon 
-                className='likeIcon2'  
-                style={{color: liked ? "var(--airbnb-color)" : "rgba(0,0,0,0.4)"}}
-                onClick={()=> setLiked(!liked)}
-            />
+            <Like id={id}/>
         </div>
         <div className="cardInfoTop">
             <span className="category">{searchCategory}</span>

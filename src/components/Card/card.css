@@ -9,6 +9,7 @@
     font-size: 0.9rem;
     color:var(--primary-black);
     font-weight: 500;
+    letter-spacing: 0.05rem;
     
 }
 
@@ -33,24 +34,6 @@
 
 }
 
-.likeIcon1, .likeIcon2{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color:white;
-    cursor: pointer;
-    
-}
-
-.likeIcon1{
-    z-index: 4;
-    font-size: 1.2rem;
-}
-
-.likeIcon2{
-    z-index: 3;
-    font-size: 1.2rem;
-}
 
 .cardInfoTop{
     display: flex;
@@ -79,10 +62,12 @@
 .desc, .host, .beds, .date{
     color:grey;
     margin-bottom: 3px;
+    font-size: 0.95rem;
 }
 
 .price>span{
     font-weight: bold;
+    font-size: 0.95rem;
 
 }
 

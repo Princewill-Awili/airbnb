@@ -75,6 +75,7 @@ export const iconObjects = [
 export const homes= [
     
     {
+        id:nanoid(),
         host:"Matthew",
         img:apt1,
         date:"Oct 25-30",
@@ -84,6 +85,7 @@ export const homes= [
         rating: Math.floor(Math.random()*5)
     },
     {
+        id:nanoid(),
         host:"Olatunji",
         img:apt2,
         date:"Dec 1-5",
@@ -93,6 +95,7 @@ export const homes= [
         rating: Math.floor(Math.random()*5)
     },
     {
+        id:nanoid(),
         host:"Gbemisola",
         img:apt3,
         date:"Oct 23-30",
@@ -102,6 +105,7 @@ export const homes= [
         rating: Math.floor(Math.random()*5)
     },
     {
+        id:nanoid(),
         host:"Ruben",
         img:apt4,
         date:"Nov 17-21",
@@ -111,6 +115,7 @@ export const homes= [
         rating: Math.floor(Math.random()*5)
     },
     {
+        id:nanoid(),
         host:"Oswald",
         img:apt5,
         date:"Nov 14-18",
@@ -120,6 +125,7 @@ export const homes= [
         rating: Math.floor(Math.random()*5)
     },
     {
+        id:nanoid(),
         host:"Yemi",
         img:apt6,
         date:"Dec 4-14",
@@ -129,6 +135,7 @@ export const homes= [
         rating: Math.floor(Math.random()*5)
     },
     {
+        id:nanoid(),
         host:"Lotanna",
         img:apt7,
         date:"Oct 29-31",
@@ -138,6 +145,7 @@ export const homes= [
         rating: Math.floor(Math.random()*5)
     },
     {
+        id:nanoid(),
         host:"Omasola",
         img:apt8,
         date:"Dec 20-25",
@@ -147,6 +155,7 @@ export const homes= [
         rating: Math.floor(Math.random()*5)
     },
     {
+        id:nanoid(),
         host:"Debbie",
         img:apt9,
         date:"Nov 1-15",
@@ -156,6 +165,7 @@ export const homes= [
         rating: Math.floor(Math.random()*5)
     },
     {
+        id:nanoid(),
         host:"Rowland",
         img:apt10,
         date:"Oct 25-30",
@@ -166,6 +176,7 @@ export const homes= [
     },
     
     {
+        id:nanoid(),
         host:"Nkiru",
         img:apt11,
         date:"Nov 8-10",
@@ -175,6 +186,7 @@ export const homes= [
         rating: Math.floor(Math.random()*5)
     },
     {
+        id:nanoid(),
         host: "Ebube", 
         img: apt12,
         date:"Oct 24-27",
@@ -184,6 +196,7 @@ export const homes= [
         rating: Math.floor(Math.random()*5)
     },
     {
+        id:nanoid(),
         host:"Kelvin",
         img:apt13,
         date:"Nov 2-5",
@@ -194,6 +207,7 @@ export const homes= [
     },
     
     {
+        id:nanoid(),
         host:"Oluwaseun",
         img:"https://plistbooking.com/wp-content/uploads/2020/09/5-Amazing-Facts-about-Shortlet-Apartments-in-Lagos-Nigeria-1170x853.jpg",
         date:"Dec 20-30",
@@ -204,6 +218,7 @@ export const homes= [
     }
     ,
     {
+        id:nanoid(),
         host:"Yemi",
         img:"https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/ea/56/90.jpg",
         date:"Dec 4-14",
@@ -213,6 +228,7 @@ export const homes= [
         rating: Math.floor(Math.random()*5)
     },
     {
+        id:nanoid(),
         host:"Debbie",
         img:"https://www.bellanaija.com/wp-content/uploads/2021/11/image3.jpg",
         date:"Nov 1-15",
@@ -222,6 +238,7 @@ export const homes= [
         rating: Math.floor(Math.random()*5)
     },
     {
+        id:nanoid(),
         host:"Rowland",
         img:"https://diywithjoy.com/wp-content/uploads/2021/03/Picture-2png.png",
         date:"Oct 25-30",
@@ -232,6 +249,7 @@ export const homes= [
     },
     
     {
+        id:nanoid(),
         host:"Nkiru",
         img:"https://nairametrics.com/wp-content/uploads/2021/11/Shortlet-1.jpg?w=900&h=570&crop=1",
         date:"Nov 8-10",
@@ -242,6 +260,7 @@ export const homes= [
     },
 
     {
+        id:nanoid(),
         host:"Oluwaseun",
         img:"https://plistbooking.com/wp-content/uploads/2020/09/5-Amazing-Facts-about-Shortlet-Apartments-in-Lagos-Nigeria-1170x853.jpg",
         date:"Dec 20-30",
@@ -252,6 +271,7 @@ export const homes= [
     }
     ,
     {
+        id:nanoid(),
         host:"Yemi",
         img:"https://media-cdn.tripadvisor.com/media/vr-splice-j/0a/ea/56/90.jpg",
         date:"Dec 4-14",

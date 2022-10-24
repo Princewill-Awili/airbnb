@@ -1,0 +1,28 @@
+.like{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+
+}
+
+.likeIcon1, .likeIcon2{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color:white;
+    cursor: pointer;
+    
+}
+
+.likeIcon1{
+    z-index: 4;
+}
+
+.likeIcon2{
+    z-index: 3;
+}
+
