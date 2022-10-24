@@ -15,7 +15,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 
 ### Deployment/Hosting
-This project is deployed on https://airbnb-clone-princewill.netlify.app/ 
+This project is deployed on https://airbnb-princewill.netlify.app/ 
 
 Check it out.
 
